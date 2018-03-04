@@ -7,6 +7,7 @@ SICP
 Все решения были сделаны в DrRacket на диалекте Scheme.
 ### Установка DrRacket в Ubuntu
 sudo add-apt-repository ppa:plt/racket
+---
 sudo apt update && sudo apt install racket
 
 
