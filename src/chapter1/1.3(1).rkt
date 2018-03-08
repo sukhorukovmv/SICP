@@ -1,5 +1,10 @@
-#lang racket
+#lang racket/base
 (define (sum-of-squares-of-top-two a b c)
+    (define (>= a b)
+      (or (> a b) (= a b)))
+    (define (square x) (* x x))
+    (define (!= a b)
+      (or (> a b) (< a b)))
     (define (max1)
     (cond ((and (>= a b) (>= a c)) a)
           ((and (>= b a) (>= b c)) b)
@@ -10,10 +15,4 @@
           ((= c (max1)) (if (> a b) a b))))
    (+ (square (max1)) (square (max2))))
 
-(define (>= a b)
-    (or (> a b) (= a b)))
-
-(define (square x) (* x x))
-
-(define (!= a b)
-    (or (> a b) (< a b)))
+(provide sum-of-squares-of-top-two)
