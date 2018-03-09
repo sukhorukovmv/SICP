@@ -1,6 +1,6 @@
 #lang racket/base
-(require rackunit "./1.3(1).rkt")
-;(require rackunit "../../src/chapter1/1.3(1).rkt")
+
+(require rackunit "../../src/chapter1/1.3(1).rkt")
 
 (check-equal? (sum-of-squares-of-top-two 4 6 9) 117 "test 1")
 (check-equal? (sum-of-squares-of-top-two 5 2 3) 34 "test 2")

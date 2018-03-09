@@ -1,4 +1,4 @@
-#lang racket
+#lang racket/base
 
 (define e 0.0001)
 
@@ -20,4 +20,4 @@
 
 (define (average x y)
     (/ (+ x y) 2))
-
+(provide sqrt)
