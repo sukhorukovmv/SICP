@@ -1,5 +1,4 @@
 #lang racket
-(provide smallest-divisor)
 
 (define (square x) (* x x))
 
@@ -13,3 +12,5 @@
 
 (define (divides? a b)
     (= (remainder b a) 0 ))
+
+(provide smallest-divisor)
