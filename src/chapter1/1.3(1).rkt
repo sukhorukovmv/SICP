@@ -1,4 +1,5 @@
 #lang racket/base
+
 (define (sum-of-squares-of-top-two a b c)
     (define (>= a b)
       (or (> a b) (= a b)))
