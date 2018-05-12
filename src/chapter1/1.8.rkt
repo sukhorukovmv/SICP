@@ -1,7 +1,7 @@
 #lang racket
 
 (define (cube x) (* x x x))
-(define e 0.00000000001)
+(define e 0.000000000000001)
 (define (cube-sqrt x)
   (define (good-enough? guess)
     (< (abs (- (cube guess) x)) e))
