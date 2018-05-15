@@ -1,4 +1,4 @@
-#lang racket
+#lang racket/base
 (define (fib-iter a b p q count)
   (cond ((= count 0) b)
         ((even? count)
@@ -16,3 +16,5 @@
   (fib-iter 1 0 0 1 n))
 
 (define (square x) (* x x))
+
+(provide fib)
