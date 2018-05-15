@@ -1,4 +1,4 @@
-#lang racket
+#lang racket/base
 
 (define (halve a)
   (/ a 2))
@@ -11,3 +11,4 @@
         ((even? b) (iter* rez (double a) (halve b)))
         (else (iter* (+ rez a) a (- b 1)))))
 
+(provide * halve double)
