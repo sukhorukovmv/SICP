@@ -1,5 +1,5 @@
 #lang racket
-(require "./1.21.rkt")
+(require "./1.21.rkt");smallest-divisor v1.0
 
 (define (prime? n)
   (= n  (smallest-divisor n)))
