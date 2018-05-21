@@ -29,4 +29,4 @@
  ;          (sum f (+ k 1) next n))))
  ; (* (/ h 3) (sum f 0 next n)) 
 
-        
+(provide sympson)        
