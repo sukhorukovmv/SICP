@@ -5,4 +5,5 @@
       a
       (gcd b (remainder a b))))
 
-(check-equal? (gcd 2 4) 2)
+(provide gcd)
+

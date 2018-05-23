@@ -12,7 +12,7 @@
         result
         (iter (next a)
               (combiner result (term a)))))
-  (iter a 1))
+  (iter a null-value))
 
 (define (factorial n)
   (define (next a) (+ a 1))
